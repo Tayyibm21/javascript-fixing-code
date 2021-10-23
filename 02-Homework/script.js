@@ -28,8 +28,11 @@ if (if all is false) {
 const (uppercase) "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 const (lowercase) "abcdefghijklmnopqrstuvwxyz"
 const (number) "0123456789"
-const (special) " !"#$%&'()\*+,-./:;<=>?@[\]^\_`{|}~"
+const (special) " !#$%&'()\*+,-./:;<=>?@[\]^\_`{|}~ "
 
+function getrandomcharacter () {
+
+  
 
 // Write password to the #password input
 function writePassword() {
