@@ -32,6 +32,12 @@ const (special) " !#$%&'()\*+,-./:;<=>?@[\]^\_`{|}~ "
 
 function getrandomcharacter () {
 
+  Array; "uppercase"
+  Array; "lowercase"
+  Array; "number"
+  Array; "special"
+  Array; "password collection"
+  
   
 
 // Write password to the #password input
