@@ -18,7 +18,11 @@ var confirm; (uppercase)
 var confirm; (number)
 var confirm; (special)
 
+if (if all is false) {
+  alert and break
 
+} else {
+  return criteria
 }
 
 // Write password to the #password input
