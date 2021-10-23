@@ -4,6 +4,22 @@ var generateBtn = document.querySelector('#generate');
 function generatePassword() {
   // PLEASE ADD ALL YOUR CODE HERE
 }
+alert ("text");
+var text
+var intiger
+if ( text = intiger) {
+"check is within range"
+} else {
+  alert and break
+}
+
+var confirm; (lowercase)
+var confirm; (uppercase)
+var confirm; (number)
+var confirm; (special)
+
+
+}
 
 // Write password to the #password input
 function writePassword() {
