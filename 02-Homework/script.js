@@ -25,6 +25,12 @@ if (if all is false) {
   return criteria
 }
 
+const (uppercase) "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+const (lowercase) "abcdefghijklmnopqrstuvwxyz"
+const (number) "0123456789"
+const (special) " !"#$%&'()\*+,-./:;<=>?@[\]^\_`{|}~"
+
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
