@@ -38,7 +38,11 @@ function getrandomcharacter () {
   Array; "special"
   Array; "password collection"
   
-  
+  var lowercase = "password collection"
+  var uppercase = "password collection"
+  var number = "password collection"
+  var special = "password collection"
+  }
 
 // Write password to the #password input
 function writePassword() {
