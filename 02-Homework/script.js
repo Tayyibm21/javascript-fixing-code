@@ -16,6 +16,17 @@ function generatePassword() {
     return passwordLength;
   } else (passwordLength >= 10 || passwordLength <= 132) {
   }
+
+
+  const isLowerCase = confirm("Do you want to add a lowercase?");
+  const isUpperCase = confirm("Do you want to add a uppercase?");
+  const isNumbers = confirm("Do you want to add a number?");
+  const isSpecials = confirm("Do you want to add a special character?");
+
+  if (!isLowerCase && !isUpperCase && !isNumbers && !isSpecials) {
+    alert("please choose at least one option");
+    return;
+  }
 }
 
 
