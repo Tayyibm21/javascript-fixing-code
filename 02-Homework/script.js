@@ -2,16 +2,22 @@
 var generateBtn = document.querySelector('#generate');
 
 function generatePassword() {
-  // PLEASE ADD ALL YOUR CODE HERE
+
+  const lowercase = "abcdefghijklmnopqrstuvwxyxz";
+  const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const numbers = "0123456789";
+  const specials = "!@#$%^&*()?/;:~";
+
+
+  const passwordLength = Number(prompt("Enter password length (10-132):"));
+
+  if (passwordLength < 10 || passwordLength > 132) {
+    alert("Please choose a different length?");
+    return passwordLength;
+  } else (passwordLength >= 10 || passwordLength <= 132) {
+  }
 }
-alert ("text");
-var text
-var intiger
-if ( text = intiger) {
-"check is within range"
-} else {
-  alert and break
-}
+
 
 var confirm; (lowercase)
 var confirm; (uppercase)
