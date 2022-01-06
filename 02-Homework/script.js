@@ -27,6 +27,20 @@ function generatePassword() {
     alert("please choose at least one option");
     return;
   }
+  const choices = [];
+
+  if (isLowerCase) {
+    choices.push(lowercase);
+  }
+  if (isUpperCase) {
+    choices.push(uppercase);
+  }
+  if (isNumbers) {
+    choices.push(numbers);
+  }
+  if (isSpecials) {
+    choices.push(specials);
+  }
 }
 
 
