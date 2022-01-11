@@ -41,39 +41,20 @@ function generatePassword() {
   if (isSpecials) {
     choices.push(specials);
   }
-}
 
-
-var confirm; (lowercase)
-var confirm; (uppercase)
-var confirm; (number)
-var confirm; (special)
-
-if (if all is false) {
-  alert and break
-
-} else {
-  return criteria
-}
-
-const (uppercase) "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-const (lowercase) "abcdefghijklmnopqrstuvwxyz"
-const (number) "0123456789"
-const (special) " !#$%&'()\*+,-./:;<=>?@[\]^\_`{|}~ "
-
-function getrandomcharacter () {
-
-  Array; "uppercase"
-  Array; "lowercase"
-  Array; "number"
-  Array; "special"
-  Array; "password collection"
-  
-  var lowercase = "password collection"
-  var uppercase = "password collection"
-  var number = "password collection"
-  var special = "password collection"
+  let password = "";
+  // generate random password
+  for (let i = 0; i < 10; i++) {
+    // get random choice index
+    const randomChoiceIndex = Math.floor(Math.random() * choices.length);
+    // get random characters
+    const randomCharacters = choices[randomChoiceIndex];
+    password += randomCharacters.charAt(
+      Math.floor(Math.random() * randomCharacters.length)
+    );
   }
+  return password;
+}
 
 // Write password to the #password input
 function writePassword() {
