@@ -91,3 +91,28 @@ const specialCharacters = [
   "}",
   "~",
 ];
+
+// Assignment Code
+var generateBtn = document.querySelector("#generate");
+
+function generatePassword() {
+  const userCriteria = finalCriteria();
+
+  //Main Array
+  const choicesArray = getChoices(userCriteria);
+
+  //Final password
+  const password = [];
+
+  //Loop
+  for (let index = 0; index < userCriteria.length; index++) {
+    //pick a random character from the main array
+    let randomCharacter =
+      choicesArray[Math.floor(Math.random() * choicesArray.length)];
+
+    //Push the character to the password array
+    password.push(randomCharacter);
+  }
+
+  return password.join("");
+}
