@@ -116,3 +116,44 @@ function generatePassword() {
 
   return password.join("");
 }
+
+
+//Get the password length from the user
+const getLength = () => {
+  let length = parseInt(
+    prompt(
+      "Please choose the length of your password. (Between 8 and 128 characters)"
+    )
+  );
+
+  // Validate the Length input
+  if (isNaN(length)) {
+    alert("Please choose a number between 8 and 128");
+    length = getLength();
+  }
+
+  if (length < 8 || length > 128) {
+    alert("Please choose a number between 8 and 128");
+    length = getLength();
+  }
+  return length;
+};
+
+//Get other criteria
+function getCriteria() {
+  const isLowercase = confirm("Do you wanna use Lowercase characters?");
+
+  const isUppercase = confirm("Do you wanna use Uppercase characters?");
+
+  const isNumeric = confirm("Do you wanna use Numbers?");
+
+  const isSpecialCharacter = confirm("Do you wanna use Especial characters?");
+
+  // Validate the other criteria
+  if (!isLowercase && !isUppercase && !isNumeric && !isSpecialCharacter) {
+    alert("You need to choose at least one type of character!");
+    return getCriteria();
+  }
+
+  return { isLowercase, isUppercase, isNumeric, isSpecialCharacter };
+}
